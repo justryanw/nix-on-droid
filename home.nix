@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   # Read the changelog before changing this value
@@ -23,6 +23,19 @@
       aliases = {
         acm = "!git add -A && git commit -m";
       };	
+    };
+
+    ssh = {
+      enable = true;
+      matchBlocks = {
+        "github" = {
+          user = "git";
+          hostname = "github.com";
+        };
+        "*" = lib.hm.dag.entryBefore ["github"] {
+          user = "ryan";
+        };
+      };
     };
   };
 }
