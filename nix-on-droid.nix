@@ -5,6 +5,7 @@
     vim
     openssh
     curl
+    fzf
 
     (import ./scripts/share.nix { inherit pkgs; })
 
