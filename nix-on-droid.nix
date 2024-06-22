@@ -44,7 +44,14 @@
     useGlobalPkgs = true;
   };
 
-  terminal.font = "${pkgs.fira-code-nerdfont}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+  users.shell = "${pkgs.zsh}/bin/zsh";
+
+  terminal = {
+    font = "${pkgs.fira-code-nerdfont}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+    colors = {
+      background = "#1F1F1F";
+    };
+  };
 
   networking.hosts = {
     "200:f788:a3a9:56ae:d341:e3f7:c7f:c771" = [ "desktop" ];
