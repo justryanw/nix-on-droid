@@ -7,6 +7,8 @@
     vim # or some other editor, e.g. nano or neovim
     openssh
     curl
+    
+    (import ./scripts/share.nix { inherit pkgs; })
 
     # Some common stuff that people expect to have
     #procps
