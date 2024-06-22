@@ -50,7 +50,6 @@
     font = "${pkgs.fira-code-nerdfont}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
     colors = {
       background = "#1F1F1F";
-      foreground = "#1F1F1F";
     };
   };
 
