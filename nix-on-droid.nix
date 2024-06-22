@@ -44,6 +44,8 @@
     useGlobalPkgs = true;
   };
 
+  terminal.font = "${pkgs.fira-code-nerdfont}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
+
   networking.hosts = {
     "200:f788:a3a9:56ae:d341:e3f7:c7f:c771" = [ "desktop" ];
     "202:8699:42dd:e354:50c5:5a7e:610b:1a18" = [ "laptop" ];
