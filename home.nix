@@ -32,7 +32,7 @@
           user = "git";
           hostname = "github.com";
         };
-        "*" = lib.hm.dag.entryBefore ["github"] {
+        "*" = lib.hm.dag.entryAfter ["github"] {
           user = "ryan";
         };
       };
