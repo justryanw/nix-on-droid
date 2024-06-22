@@ -3,6 +3,7 @@
 {
   environment.packages = with pkgs; [
     vim
+    openssh
     curl
 
     (import ./scripts/share.nix { inherit pkgs; })
