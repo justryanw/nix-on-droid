@@ -1,5 +1,5 @@
 { pkgs }:
 
 pkgs.writeShellScriptBin "share" ''
-  echo "hello"
+  ${pkgs.curl}/bin/curl -F"file=@$1" https://0x0.st
 ''
