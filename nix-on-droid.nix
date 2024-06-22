@@ -44,7 +44,7 @@
     useGlobalPkgs = true;
   };
 
-  users.shell = "${pkgs.zsh}/bin/zsh";
+  user.shell = "${pkgs.zsh}/bin/zsh";
 
   terminal = {
     font = "${pkgs.fira-code-nerdfont}/share/fonts/truetype/NerdFonts/FiraCodeNerdFont-Regular.ttf";
