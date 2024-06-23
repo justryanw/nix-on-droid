@@ -6,6 +6,7 @@
     openssh
     curl
     fzf
+    viu
 
     (import ./scripts/share.nix { inherit pkgs; })
 
@@ -13,7 +14,7 @@
     #procps
     #killall
     #diffutils
-    #findutils
+    findutils
     #utillinux
     #tzdata
     #hostname
